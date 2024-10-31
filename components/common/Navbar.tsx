@@ -60,7 +60,7 @@ const Navbar = (props: NavbarProps) => {
         </div>
       </div>
       <div className=" flex gap-2 items-center">
-        <div className="hidden md:flex items-center gap-2 ">
+        <div className="hidden sm:flex items-center gap-2 ">
           <Button variant={"outline"}>Sign in</Button>
           <Button>Start for free</Button>
         </div>

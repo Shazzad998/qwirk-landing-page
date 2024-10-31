@@ -11,7 +11,7 @@ const config: Config = {
   	extend: {
 		fontFamily: {
 			sans: ['var(--font-inter)'],
-			roboto: ['var(--font-roboto)'],
+			dosis: ['var(--font-dosis)'],
 		  },
   		colors: {
   			background: 'hsl(var(--background))',

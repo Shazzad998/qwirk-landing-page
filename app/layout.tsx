@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Condensed } from 'next/font/google'
+import { Inter, Dosis } from 'next/font/google'
 import "./globals.css";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', })
-const roboto = Roboto_Condensed({ subsets: ['latin'], variable: '--font-roboto', })
+const dosis = Dosis({ subsets: ['latin'], variable: '--font-dosis', weight:['200','300','400','500','600','700','800'] })
 
 export const metadata: Metadata = {
   title: "Qwirk",
@@ -16,9 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${inter.variable} ${roboto.variable} font-sans antialiased`}
+        className={`${inter.variable} ${dosis.variable} font-sans antialiased px-4 py-2 max-w-full overflow-hidden`}
       >
         {children}
       </body>
