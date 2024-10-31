@@ -1,17 +1,24 @@
+import Image from "next/image";
 import { Button } from "../ui/button";
 
 type HeroSectionProps = {};
 
 const HeroSection = (props: HeroSectionProps) => {
   return (
-    <div
-      className=" py-8 lg:pt-16 text-center"
-      style={{
-        backgroundImage: `linear-gradient(#4040407a 1px, transparent 1px), linear-gradient(to right, #4040407a 1px, transparent 1px)`,
-        backgroundSize: `60px 60px`,
-      }}
-    >
-      <div>
+    <div className=" relative py-8 lg:pt-16 xl:pt-20 xl:pb-52 text-center">
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `linear-gradient(#4040407a 1px, transparent 1px), linear-gradient(to right, #4040407a 1px, transparent 1px)`,
+          backgroundSize: `60px 60px`,
+          maskImage: `
+          linear-gradient(to bottom, transparent, black 40%, black 60%, transparent),
+          linear-gradient(to right, transparent, black 40%, black 60%, transparent)
+        `,
+          maskComposite: "intersect",
+        }}
+      ></div>
+      <div className="relative">
         <div className=" bg-muted rounded-full p-0.5 text-sm flex items-center gap-x-3 max-w-96 mx-auto mb-2">
           {" "}
           <span className=" bg-foreground text-background rounded-full px-2 py-0.5">
@@ -34,6 +41,15 @@ const HeroSection = (props: HeroSectionProps) => {
           <Button>Start for free</Button>
           <Button variant={"outline"}> Talk to sales</Button>
         </div>
+      </div>
+      <div className=" relative mt-8">
+        <Image
+          src="/images/application-thumb.png"
+          alt="application-thumb"
+          className=" rounded-2xl border border-border/50 mx-auto shadow-2xl shadow-muted/40"
+          width={1200}
+          height={400}
+        />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const AlertSection = (props: AlertSectionProps) => {
 
   if (showAlert) {
     return (
-      <div className=" bg-primary font-medium text-primary-foreground block p-2 text-sm md:text-base rounded-md relative">
+      <div className=" bg-primary font-medium text-primary-foreground block p-2 text-sm rounded-md relative">
         <p className="pr-6 md:pr-0 text-center">
           {" "}
           We&apos;ve raised a $23.5m Series led by Redpoint Ventures!{" "}
