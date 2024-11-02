@@ -5,7 +5,7 @@ type HeroSectionProps = {};
 
 const HeroSection = (props: HeroSectionProps) => {
   return (
-    <div className=" relative py-8 lg:pt-16 xl:pt-20 xl:pb-52 text-center">
+    <div className=" relative pt-12 md:pt-16 lg:pt-20 xl:pt-24 pb-8 md:pb-12 lg:pb-16 xl:pb-20 text-center">
       <div
         className="absolute inset-0"
         style={{
