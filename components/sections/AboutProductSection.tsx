@@ -4,7 +4,7 @@ type AboutProductSectionProps = {};
 
 const AboutProductSection = (props: AboutProductSectionProps) => {
   return (
-    <div className=" container md:px-20 mx-auto space-y-4 md:space-y-8">
+    <div className=" container md:px-20 mx-auto space-y-4 md:space-y-8 py-8 md:py-12 lg:py-16 xl:py-20">
       <div className=" space-y-2 md:space-y-4 max-w-4xl mx-auto text-center">
         <h2 className=" text-3xl lg:text-4xl 2xl:text-5xl font-dosis font-bold"> Key Features to boost your productivity</h2>
         <p className=" text-sm lg:text-base text-foreground/70">
@@ -14,7 +14,7 @@ const AboutProductSection = (props: AboutProductSectionProps) => {
         </p>
       </div>
       <div className=" grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
-        <div className=" flex flex-col sm:shrink-0 max-w-96 sm:max-w-[unset] mx-auto bg-green-500/10 rounded-md">
+        <div className=" flex flex-col sm:shrink-0 max-w-96 sm:max-w-[unset] mx-auto bg-green-500/10 rounded-md transition-all hover:scale-[1.02] duration-200 ease-in">
           <div className=" p-6 space-y-2">
             <span className=" w-8 h-8 flex items-center justify-center rounded-md bg-green-700 text-green-100">
               {" "}
@@ -35,7 +35,7 @@ const AboutProductSection = (props: AboutProductSectionProps) => {
             />
           </div>
         </div>
-        <div className=" flex flex-col sm:shrink-0 max-w-96 sm:max-w-[unset] mx-auto bg-rose-500/10 rounded-md">
+        <div className=" flex flex-col sm:shrink-0 max-w-96 sm:max-w-[unset] mx-auto bg-rose-500/10 rounded-md transition-all hover:scale-[1.02] duration-200 ease-in">
           <div className=" p-6 space-y-2">
             <span className=" w-8 h-8 flex items-center justify-center rounded-md bg-rose-700 text-rose-100">
               {" "}
@@ -55,7 +55,7 @@ const AboutProductSection = (props: AboutProductSectionProps) => {
             />
           </div>
         </div>
-        <div className=" flex flex-col sm:shrink-0 max-w-96 sm:max-w-[unset] mx-auto bg-yellow-500/10 rounded-md">
+        <div className=" flex flex-col sm:shrink-0 max-w-96 sm:max-w-[unset] mx-auto bg-yellow-500/10 rounded-md transition-all hover:scale-[1.02] duration-200 ease-in">
           <div className=" p-6 space-y-2">
             <span className=" w-8 h-8 flex items-center justify-center rounded-md bg-yellow-700 text-yellow-100">
               {" "}

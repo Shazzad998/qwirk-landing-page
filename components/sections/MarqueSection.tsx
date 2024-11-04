@@ -49,7 +49,7 @@ const MarqueComponent = ({ direction }: { direction: string }) => {
 
 const MarqueeSection = () => {
   return (
-    <div className="overflow-hidden w-full flex flex-col gap-6 py-10 md:py-14 lg:py-20 xl:py-24">
+    <div className="overflow-hidden w-full flex flex-col gap-6 py-8 md:py-12 lg:py-16 xl:py-20">
       <MarqueComponent direction="left" />
       <MarqueComponent direction="right" />
     </div>
