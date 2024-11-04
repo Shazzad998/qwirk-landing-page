@@ -1,18 +1,18 @@
 import Image from "next/image";
+import SectionHeader from "../SectionHeader";
+import SectionWrapper from "../SectionWrapper";
 
 type AboutProductSectionProps = {};
 
 const AboutProductSection = (props: AboutProductSectionProps) => {
   return (
-    <div className=" container md:px-20 mx-auto space-y-4 md:space-y-8 py-8 md:py-12 lg:py-16 xl:py-20">
-      <div className=" space-y-2 md:space-y-4 max-w-4xl mx-auto text-center">
-        <h2 className=" text-3xl lg:text-4xl 2xl:text-5xl font-dosis font-bold"> Key Features to boost your productivity</h2>
-        <p className=" text-sm lg:text-base text-foreground/70">
-          Explore the essential tools designed to streamline your workglow,
+    <SectionWrapper>
+      <SectionHeader
+        headerText="Key Features to boost your productivity"
+        subHeaderText="Explore the essential tools designed to streamline your workglow,
           enhance team collaboration, and ensure your projects run smoothly from
-          start to finish.
-        </p>
-      </div>
+          start to finish."
+      />
       <div className=" grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
         <div className=" flex flex-col sm:shrink-0 max-w-96 sm:max-w-[unset] mx-auto bg-green-500/10 rounded-md transition-all hover:scale-[1.02] duration-200 ease-in">
           <div className=" p-6 space-y-2">
@@ -23,7 +23,8 @@ const AboutProductSection = (props: AboutProductSectionProps) => {
             <h3 className=" text-2xl font-semibold">To-do List</h3>
             <p className=" text-xs text-foreground/80">
               Organize your daily tasks efforlessly with out intuatuve to-do
-              list. Stay focused and prioritize what matters most achiving the goal
+              list. Stay focused and prioritize what matters most achiving the
+              goal
             </p>
           </div>
           <div className=" relative w-full aspect-[4/3]">
@@ -43,7 +44,8 @@ const AboutProductSection = (props: AboutProductSectionProps) => {
             </span>
             <h3 className=" text-2xl font-semibold">Team Member Tracking</h3>
             <p className=" text-xs text-foreground/80">
-              Easily Track your team member&apos;s progress and stay connected. Ensure everyone is engaged and working towards shared goals.
+              Easily Track your team member&apos;s progress and stay connected.
+              Ensure everyone is engaged and working towards shared goals.
             </p>
           </div>
           <div className=" relative w-full aspect-[4/3]">
@@ -63,7 +65,8 @@ const AboutProductSection = (props: AboutProductSectionProps) => {
             </span>
             <h3 className=" text-2xl font-semibold">Project Tracking</h3>
             <p className=" text-xs text-foreground/80">
-              Monitor project timelines and milestones in real-time. keep projects on track and meet your deadlines with confidence.
+              Monitor project timelines and milestones in real-time. keep
+              projects on track and meet your deadlines with confidence.
             </p>
           </div>
           <div className=" relative w-full aspect-[4/3]">
@@ -75,9 +78,8 @@ const AboutProductSection = (props: AboutProductSectionProps) => {
             />
           </div>
         </div>
-       
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

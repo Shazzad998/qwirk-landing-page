@@ -1,20 +1,24 @@
-import { GoalIcon, LightbulbIcon, ListCheck } from "lucide-react";
+import {
+  GoalIcon,
+  LightbulbIcon,
+  ListCheck,
+  SquareKanbanIcon,
+} from "lucide-react";
+import SectionHeader from "../SectionHeader";
+import SectionWrapper from "../SectionWrapper";
 
 type FeatureSectionProps = {};
 
 const FeatureSection = (props: FeatureSectionProps) => {
   return (
-    <section className="py-8 md:py-12 lg:py-16 xl:py-20 space-y-6">
-      <div className="space-y-2 md:space-y-4 max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl lg:text-4xl 2xl:text-5xl font-dosis font-bold">
-          Powerful Feature to Elevate Your Workflow
-        </h2>
-        <p className="text-sm lg:text-base text-foreground/70">
-          Explore advanced tools that help you make smarter decisions, track
+    <SectionWrapper>
+      <SectionHeader
+        headerText="Powerful Feature to Elevate Your Workflow"
+        subHeaderText="Explore advanced tools that help you make smarter decisions, track
           progress and manage your tasks with ease. Stay organized and in
-          control with features designed to enhance your productivity.
-        </p>
-      </div>
+          control with features designed to enhance your productivity."
+      />
+
       <div className=" grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
         <div className="px-6 pb-8 pt-10 border border-border rounded-md transition-color ease-in duration-200 group hover:border-emerald-500/40 hover:bg-emerald-800/10">
           <div className=" w-12 h-12 flex items-center justify-center bg-muted/30 rounded-md mb-10 text-emerald-500 group-hover:bg-muted/70 transition-color ease-in duration-200">
@@ -51,16 +55,16 @@ const FeatureSection = (props: FeatureSectionProps) => {
 
         <div className="px-6 pb-8 pt-10 border border-border rounded-md transition-color ease-in duration-200 group hover:border-yellow-500/40 hover:bg-yellow-800/10">
           <div className=" w-12 h-12 flex items-center justify-center bg-muted/30 rounded-md mb-10 text-yellow-500 group-hover:bg-muted/70 transition-color ease-in duration-200">
-            <ListCheck className=" w-6 h-6" />
+            <SquareKanbanIcon className=" w-6 h-6" />
           </div>
           <h3 className="text-2xl font-medium mb-1">Organized Workflow</h3>
           <p className="text-sm lg:text-base text-foreground/70 font-light">
-            Stay on top of tasks by moving tasks
-            across boards, and keeping projects on track.
+            Stay on top of tasks by moving tasks across boards, and keeping
+            projects on track.
           </p>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

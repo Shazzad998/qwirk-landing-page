@@ -2,6 +2,7 @@
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import SectionWrapper from "../SectionWrapper";
 
 const images = [
   "/images/Beacons.svg",
@@ -49,10 +50,13 @@ const MarqueComponent = ({ direction }: { direction: string }) => {
 
 const MarqueeSection = () => {
   return (
-    <div className="overflow-hidden w-full flex flex-col gap-6 py-8 md:py-12 lg:py-16 xl:py-20">
+    
+      <SectionWrapper className="overflow-hidden w-full flex flex-col gap-6">
+
       <MarqueComponent direction="left" />
       <MarqueComponent direction="right" />
-    </div>
+      </SectionWrapper>
+   
   );
 };
 
