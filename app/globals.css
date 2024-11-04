@@ -6,8 +6,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 @layer base {
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    @apply w-2.5 h-1 md:h-2 rounded-lg;
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply bg-muted/40;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-lg;
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
