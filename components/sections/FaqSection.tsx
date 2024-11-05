@@ -3,6 +3,14 @@ import { useState } from "react";
 import SectionHeader from "../SectionHeader";
 import SectionWrapper from "../SectionWrapper";
 import Accordion from "../Accordion";
+import {
+  Briefcase,
+  UserPlus,
+  BarChart2,
+  Shield,
+  Settings,
+  Smartphone
+} from "lucide-react";
 
 type FaqSectionProps = {};
 
@@ -11,45 +19,57 @@ const FaqSection = (props: FaqSectionProps) => {
   const data = [
     {
       id: 1,
-      title: "What services do you offer?",
+      title: "What features does the task management app offer?",
       content:
-        "We offer a wide range of services including website design, development, e-commerce solutions, custom web application development, website maintenance, SEO (Search Engine Optimization), and web hosting.",
+        "Our app includes task tracking, team collaboration, project timelines, priority setting, real-time notifications, and analytics to help you manage tasks efficiently. We also provide integration options with popular tools like Slack, Google Calendar, and more.",
+      icon: <Briefcase className=" w-6 h-6"/>,
       active: true,
     },
-
+  
     {
       id: 2,
-      title: "How long will it take to complete my website?",
+      title: "How does task assignment work?",
       content:
-        "The timeline for completing a website project can vary based on its complexity, features, and client requirements. Typically, we provide an estimated timeline after thoroughly discussing your project needs. Factors such as revisions, content gathering, and feedback can also influence the timeline.",
+        "You can easily assign tasks to team members by selecting their profiles within a project. Task owners receive notifications and can view their assignments in a personalized dashboard, ensuring everyone knows their responsibilities.",
+      icon: <UserPlus className=" w-6 h-6"/>, 
       active: false,
     },
-
+  
     {
       id: 3,
-      title:
-        "Do you provide ongoing support and maintenance after the website is launched?",
+      title: "Can I track progress on tasks and projects?",
       content:
-        "Yes, we offer ongoing support and maintenance services to ensure your website runs smoothly post-launch. Our support includes regular updates, security checks, bug fixes, and assistance with any technical issues that may arise.",
+        "Yes! Our app includes progress tracking features, such as completion percentages, visual timelines, and status updates, so you can monitor tasks and project stages in real-time. We also offer detailed reports to keep you updated on overall progress.",
+      icon: <BarChart2 className=" w-6 h-6"/>, 
       active: false,
     },
-
+  
     {
       id: 4,
-      title:
-        "Can you help with SEO to improve my website's visibility on search engines?",
+      title: "Is my data secure on your platform?",
       content:
-        "Absolutely. Our team includes SEO specialists who can optimize your website's content, structure, and performance to enhance its visibility on search engines like Google. We employ various techniques such as keyword research, on-page optimization, link building, and performance optimization to improve your website's search engine rankings.",
+        "Absolutely. We prioritize data security with advanced encryption, secure servers, and regular security audits. Our platform is compliant with industry standards to ensure your data remains safe and protected.",
+      icon: <Shield className=" w-6 h-6"/>, 
       active: false,
     },
-
+  
     {
       id: 5,
-      title: "How do you ensure my website is responsive and mobile-friendly?",
+      title: "Can I customize task workflows to fit my team’s needs?",
       content:
-        "We prioritize responsive web design, ensuring that your website looks and functions seamlessly across various devices and screen sizes, including desktops, laptops, tablets, and smartphones. We employ industry best practices such as fluid grids, flexible images, and CSS media queries to create a consistent user experience across all devices.",
+        "Yes, our app allows you to create custom workflows to match your team's unique processes. You can set task stages, assign tags, and create automated reminders, ensuring tasks move smoothly from start to finish.",
+      icon: <Settings className=" w-6 h-6"/>, 
       active: false,
     },
+  
+    {
+      id: 6,
+      title: "Do you offer mobile access for on-the-go task management?",
+      content:
+        "We have a mobile app that lets you manage tasks, update statuses, and collaborate with your team anytime, anywhere. Stay connected with real-time notifications and keep track of progress even when you’re away from your desktop.",
+      icon: <Smartphone className=" w-6 h-6"/>, 
+      active: false,
+    }
   ];
   return (
     <SectionWrapper>
@@ -64,6 +84,7 @@ const FaqSection = (props: FaqSectionProps) => {
             <Accordion
               key={index}
               title={item.title}
+              icon={item.icon}
               id={item.id}
               active={active}
               setActive={setActive}
