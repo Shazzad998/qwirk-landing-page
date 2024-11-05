@@ -19,7 +19,7 @@ const SectionHeader = ({
   return (
     <div
       className={cn(
-        "space-y-2 md:space-y-4 max-w-4xl mx-auto text-center mb-6 md:mb-8",
+        "space-y-2 md:space-y-4 max-w-4xl mx-auto text-center mb-8 md:mb-10",
         className
       )}
     >
