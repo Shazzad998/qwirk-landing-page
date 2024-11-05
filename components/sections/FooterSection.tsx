@@ -48,16 +48,16 @@ const FooterSection = (props: FooterSectionProps) => {
             </a>
           </div>
           <div className=" flex items-center text-foreground">
-            <a href="" className=" p-2">
+            <a href="" className=" p-2 hover:text-primary transition-colors duration-200">
               <FacebookIcon className=" w-6 h-6" />
             </a>
-            <a href="" className=" p-2">
+            <a href="" className=" p-2 hover:text-primary transition-colors duration-200">
               <InstagramLogoIcon className=" w-6 h-6" />
             </a>
-            <a href="" className=" p-2">
+            <a href="" className=" p-2 hover:text-primary transition-colors duration-200">
               <LinkedInLogoIcon className=" w-6 h-6" />
             </a>
-            <a href="" className=" p-2">
+            <a href="" className=" p-2 hover:text-primary transition-colors duration-200">
               <Youtube className=" w-6 h-6" />
             </a>
           </div>
@@ -67,27 +67,27 @@ const FooterSection = (props: FooterSectionProps) => {
           <ul className=" text-foreground/70 flex flex-col gap-2">
             <Label className=" text-lg text-foreground">Sitemap</Label>
             <li>
-              <a href="" className=" p-2 pl-0">
+              <a href="" className=" p-2 pl-0 hover:text-foreground transition-colors duration-200">
                 Home
               </a>
             </li>
             <li>
-              <a href="" className=" p-2 pl-0">
+              <a href="" className=" p-2 pl-0 hover:text-foreground transition-colors duration-200">
                 Features
               </a>
             </li>
             <li>
-              <a href="" className=" p-2 pl-0">
+              <a href="" className=" p-2 pl-0 hover:text-foreground transition-colors duration-200">
                 Product
               </a>
             </li>
             <li>
-              <a href="" className=" p-2 pl-0">
+              <a href="" className=" p-2 pl-0 hover:text-foreground transition-colors duration-200">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="" className=" p-2 pl-0">
+              <a href="" className=" p-2 pl-0 hover:text-foreground transition-colors duration-200">
                 Faq
               </a>
             </li>
@@ -95,33 +95,33 @@ const FooterSection = (props: FooterSectionProps) => {
           <ul className=" text-foreground/70 flex flex-col gap-2">
             <Label className=" text-lg text-foreground">Company</Label>
             <li>
-              <a href="" className=" p-2 pl-0">
+              <a href="" className=" p-2 pl-0 hover:text-foreground transition-colors duration-200">
                 About Us
               </a>
             </li>
             <li>
-              <a href="" className=" p-2 pl-0">
+              <a href="" className=" p-2 pl-0 hover:text-foreground transition-colors duration-200">
                 Careers
               </a>
             </li>
             <li>
-              <a href="" className=" p-2 pl-0">
+              <a href="" className=" p-2 pl-0 hover:text-foreground transition-colors duration-200">
                 Contact Us
               </a>
             </li>
             <li>
-              <a href="" className=" p-2 pl-0">
+              <a href="" className=" p-2 pl-0 hover:text-foreground transition-colors duration-200">
                 Blog
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <hr className=" my-6" />
+      <hr className=" mt-6" />
 
-      <div className=" max-w-6xl mx-auto py-4 flex flex-col justify-center items-center">
-          <div className=" font-bold text-lg">&copy; 2024 Qwirk. All Rights reserved.</div>
-          <div className=" flex justify-center text-xs gap-4 text-foreground/70">
+      <div className=" max-w-6xl mx-auto py-6 flex flex-col md:flex-row md:justify-between gap-2 justify-center items-center">
+          <div className=" font-semibold ">&copy; 2024 Qwirk. All Rights reserved.</div>
+          <div className=" flex justify-center text-xs sm:text-sm gap-4 text-foreground/70">
             <a href="">Privacy Policy</a>
             <a href="">Terms of Service</a>
             <a href="">Cookies Settings</a>
