@@ -34,7 +34,7 @@ const PricingCard = ({
   yearly,
 }: PricingCardProps) => {
   return (
-    <div className=" border border-border rounded-md px-4 py-6 md:px-6 md:py-8 text-sm md:text-base group transition-color ease-in duration-200 group hover:border-primary/40 hover:bg-primary/5">
+    <div className=" border border-border rounded-md px-4 py-6 md:px-6 md:py-8 text-sm md:text-base group transition-color ease-in duration-200 group hover:border-primary/40 hover:bg-primary/5 shadow-xl shadow-primary/5">
       <div className=" border-b border-border pb-6 mb-6">
         <div className=" w-12 h-12 flex items-center justify-center bg-muted/30 rounded-md mb-10 text-primary group-hover:bg-muted/70 transition-color ease-in duration-200">
           {icon}
